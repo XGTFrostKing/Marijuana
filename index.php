@@ -108,7 +108,7 @@
       <article class="about-img-1">
         <div class="about-picture-container" >
           <video autoplay muted loop id="myVideo">
-            <source src="videos/woman-drinking-coffee.mp4" type="video/mp4">
+            <source src="videos/Donut.mp4" type="video/mp4">
             </video>
         </div>
       </article>
@@ -691,8 +691,7 @@
       <article class="contact-map">
       <!--left column-->
       <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.435760888755!2d72.81818205068974!3d22.60019718757948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7571b60b6c28001b!2sDevang%20Patel%20Institute%20of%20Advance%20Technology%20and%20Research!5e0!3m2!1sen!2sin!4v1578498063542!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-      class="contact-iframe"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11742.318172872468!2d-70.60008598088696!3d42.6278723867818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e32f16ef6e3113%3A0x12ae063153d5ad86!2sMilk%20Island!5e0!3m2!1sen!2sph!4v1715930602771!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-iframe"></iframe>
       <br><br>
       </article>
       <!-- right column -->
