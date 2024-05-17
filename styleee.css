@@ -44,7 +44,7 @@ html {
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("./Cafe3.jpeg") center/cover no-repeat;
+    url("./Donut3.jpeg") center/cover no-repeat;
   position: relative;
   background-attachment: fixed;
 }
@@ -630,7 +630,7 @@ label{
   height: 40vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("./Cafe1.jpg") center/cover no-repeat;
+    url("./Donut2.jpeg") center/cover no-repeat;
   position: relative;
   background-attachment: fixed;
 }
@@ -816,7 +816,7 @@ label{
   height: 40vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("./map4.jpeg") center/cover no-repeat;
+    url("./Donut.jpeg") center/cover no-repeat;
   position: relative;
   background-attachment: fixed;
 }

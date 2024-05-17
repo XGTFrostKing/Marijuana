@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Crafted Coffees</title>
-    <link rel="icon" href="svg/coffee.svg" type="image/icon type">
+    <title>Dough-licious Delights</title>
+    <link rel="icon" href="svg/Icon.png" type="image/icon type">
     <link rel="stylesheet" href="styleee.css" />
     <script>
       window.onscroll = function() { Scroll()};
