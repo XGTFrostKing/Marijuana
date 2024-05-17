@@ -21,13 +21,6 @@
         document.getElementById("id-menu-snacks").className = "menu-snacks-on";
         document.getElementById("id-menu-drinks").className = "menu-drinks-off";
       }
-      function menuButtonDrinks(){
-        document.getElementById("id-drinks").className = "menu-button-on";
-        document.getElementById("id-snacks").className = "menu-button-off";
-        document.getElementById("id-menu-snacks").className = "menu-snacks-off";
-        document.getElementById("id-menu-drinks").className = "menu-drinks-on";
-      }
-
 
 
     </script>
@@ -46,8 +39,8 @@
       </section>
       <div class="fix-background" id="id-navi"></div>
       <div class="banner">
-        <h1 class="banner-title">Crafted Coffees</h1>
-        <h3 class="banner-subtitle">"Coffee पे चर्चा"</h3>
+        <h1 class="banner-title">Dough-licious Delights</h1>
+        <h3 class="banner-subtitle">"Where the Hole Truth Lies in Flavor!"</h3>
       </div>
       <div class="banner-bottom"><a href="#id-skills"><img src="svg/down-arrow.svg"></a></div>
     </header>
@@ -56,41 +49,37 @@
     <section class="skills" id="id-skills" style="background-color:#;">
       <!-- single skill -->
       <article class="skill1">
-        <center><img src="svg/coffee-bag.svg" height="45px"></center><br>
-        <h3 class="skill-title">made in us</h3>
+        <center><img src="svg/smile.png" height="45px"></center><br>
+        <h3 class="skill-title">Boosts Your Mood</h3>
         <p class="skill-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          porro.
+        We all know that eating something sweet can give us an instant mood boost.
         </p>
       </article>
       <!--end single skill -->
       <!-- single skill -->
       <article class="skill2">
-        <center><img src="svg/spa.svg" height="45px"></center><br>
-        <h3 class="skill-title">relaxation</h3>
+        <center><img src="svg/ecology-and-environment.svg" height="45px"></center><br>
+        <h3 class="skill-title">Provides Energy</h3>
         <p class="skill-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          porro.
+        They contain carbohydrates, which are essential for fueling our bodies.
         </p>
       </article>
       <!--end single skill -->
       <!-- single skill -->
       <article class="skill1">
-        <center><img src="svg/ecology-and-environment.svg" height="45px"></center><br>
-        <h3 class="skill-title">energy</h3>
+        <center><img src="svg/spa.svg" height="45px"></center><br>
+        <h3 class="skill-title">Contains Antioxidants</h3>
         <p class="skill-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          porro.
+        donuts also contain antioxidants, which are important for fighting off harmful free radicals in our bodies.
         </p>
       </article>
       <!--end single skill -->
       <!-- single skill -->
       <article class="skill2">
         <center><img src="svg/cook.svg" height="45px"></center><br>
-        <h3 class="skill-title">family recipe</h3>
+        <h3 class="skill-title">Improves Brain Function</h3>
         <p class="skill-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          porro.
+        Finally, eating donuts can also help to improve brain function. They contain a type of fat called omega-3 fatty acids, which are important for brain health.
         </p>
       </article>
       <!--end single skill -->
@@ -118,16 +107,16 @@
         <div class="about-scroll" id="id-about-scroll">
           <!-- <img src="preloader.gif" height="40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
           <h3 class="section-subtitle">ABOUT</h3>
-          <h2 class="section-title">Crafted Coffee's</h2>
+          <h2 class="section-title">Dough-licious Delights</h2>
         
         <!--end section title -->
         <p class="about-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          dolores.
+          At Dough-licious Delights, we're not just about serving donuts; we're on a mission to redefine the sweet indulgence experience. 
+          With a passion for crafting perfection in every bite, we blend traditional recipes with innovative twists, ensuring that every mouthful is a journey of flavor discovery. 
         </p>
         <p class="about-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          dolores.
+          From classic glazed delights to avant-garde creations, we believe in the power of the perfect donut to elevate your day. 
+          Join us at Dough-licious Delights, where the hole truth lies in flavor, and every moment is a celebration of deliciousness.
         </p>
         <a href="#id-contact" class="main-btn">learn more</a>
         <div class="main-btn-back"></div>
@@ -151,186 +140,10 @@
 <section class="menu-header-container">
   <div class="menu-hr-container"><hr class="menu-hr"></div>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button type="button" id="id-drinks" class="menu-button-on" onclick="menuButtonDrinks()"><img src="svg/hot-drinks (1).png" class="menu-circle-image"></button>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <button type="button" id="id-snacks" class="menu-button-off" onclick="menuButtonSnacks()"><img src="svg/snack.png" class="menu-circle-image"></button>
+  <button type="button" id="id-snacks" class="menu-button-off" onclick="menuButtonSnacks()"><img src="svg/donut.png" class="menu-circle-image"></button>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <div class="menu-hr-container"><hr class="menu-hr"></div>
 </section>
-
-<!-- drinks menu -->
-<div class="menu-drinks-on" id="id-menu-drinks">
-
-<section class="menu" style="display: inline;">
-    <article class="menu-section">
-      <!-- first column -->
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/1.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">CAFFE AMERICANO</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- second column -->
-    <article class="menu-section">
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/14.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">HOT COFFEE</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- third column -->
-    <article class="menu-section">
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/2.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">CREAM LATTE</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- fourth column -->
-    <article class="menu-section">
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/12.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">ICED LATTE</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <div style="clear: both;"></div>
-    <br>
-  </section>
-  <section class="menu" style="display: inline;">
-    <article class="menu-section">
-      <!-- first column -->
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/15.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">COFFEE SHOTS</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- second column -->
-    <article class="menu-section">
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/16.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">HERBAL</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- third column -->
-    <article class="menu-section">
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/17.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">HERBAL CHERRY</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- fourth column -->
-    <article class="menu-section">
-      <div class="menu-flip-card">
-        <div class="menu-flip-card-inner">
-          <div class="menu-flip-card-front">
-            <img src="Coffee/18.jpeg" alt="Avatar" class="menu-image">
-          </div>
-          <div class="menu-flip-card-back">
-            <div class="menu-text"><h3 class="menu-text-title">FILTERED COFFEE</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                dolores.
-              </p>
-              <h3 class="menu-text-title">₹ COST</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <div style="clear: both;"></div>
-    <br>
-  </section>
-  <br>
-
-</div>
-<!-- drinks menu ending -->
 
 <!-- snacks menu -->
 <div class="menu-snacks-off" id="id-menu-snacks">
@@ -700,7 +513,7 @@
         <br>
         <!-- section title -->
         <div class="opening-container">
-          <img src="Struct.jpg" alt="Snow" style="width:100%;">
+          <img src="Struct.jpg" alt="Snow" style="width:67%;">
           <div class="opening-text ">
             <h3>O P E N&nbsp;&nbsp;H O U R S</h3>
               <p>
@@ -726,7 +539,7 @@
         <a class="contact-social-icons" href="#"><img src="svg/linkedin.svg" weight="25" title="gmail" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="contact-social-icons" href="#"><img src="svg/whatsapp.svg" weight="25" title="whatsapp" height="25"></a> 
     </div><br>
-    <p class="fontsettings">Copyright © 2020 | <a class="colorcover-link" href="#">Crafted Coffee's</a></p><br><br>
+    <p class="fontsettings">Copyright © 2020 | <a class="colorcover-link" href="#">Dough-licious Delights</a></p><br><br>
   </div></center>
   </body>
 </html>
