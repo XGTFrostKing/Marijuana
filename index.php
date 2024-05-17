@@ -154,14 +154,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/29.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/Alcapone.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Alcapone</h3>
                 <p class="about-text">
                   Donut dipped in white chocolate and topped with sliced toasted almonds.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">100 PHP</h3>
               </div>
             </div>
           </div>
@@ -173,15 +173,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/21.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/avocado-dicaprio.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">FRIES</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Avocado</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut filled with avocado cream, dipped in avocado chocolate, and garnished with dark chocolate flakes.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">100 PHP</h3>
               </div>
             </div>
           </div>
@@ -193,15 +192,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/22.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/berry-spears.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">BURGER</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Berry Spears</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut filled with whipped cream cheese, dipped in strawberry jam, and garnished with white chocolate flakes.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">150 PHP</h3>
               </div>
             </div>
           </div>
@@ -212,15 +210,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/24.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/black-jack.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">SANDWICH</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Black Jack</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut fully encased in dark chocolate.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">100 PHP</h3>
               </div>
             </div>
           </div>
@@ -236,15 +233,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/25.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/caviar-strawberry.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">WTH IS THIS?</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Caviar Strawberry</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut dipped in strawberry milk chocolate and sprinkled with dark chocolate coated crisps.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">200 PHP</h3>
               </div>
             </div>
           </div>
@@ -256,15 +252,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/26.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/cheese-cakelicious.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">WAFFAL</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Cheese Cakelicious</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut filled with whipped cream cheese, dipped in white chocolate, topped with cookie crumbs, and garnished with white chocolate.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">120 PHP</h3>
               </div>
             </div>
           </div>
@@ -276,15 +271,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/27.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/choconutzy.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">COOKIES</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Choco Nutzy</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut filled with dark chocolate ganache & peanut butter cream, dipped in milk chocolate, and garnished with dark chocolate.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">125 PHP</h3>
               </div>
             </div>
           </div>
@@ -295,15 +289,14 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/20.jpeg" alt="Avatar" class="menu-image">
+              <img src="Coffee/chocolate-rainbow.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">MIX BREAKFAST</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Chocolate Rainbow</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut dipped in white chocolate, sprinkled with crushed toasted almonds, and garnished with strawberry jam.
                 </p>
-                <h3 class="menu-text-title">₹ COST</h3>
+                <h3 class="menu-text-title">90 PHP</h3>
               </div>
             </div>
           </div>

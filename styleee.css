@@ -717,6 +717,7 @@ label{
 .menu-flip-card-front {
   background: #E0E5EC;
   color: black;
+  border-radius: 20px;
 }
 
 .menu-flip-card-back {
