@@ -157,10 +157,9 @@
               <img src="Coffee/29.jpeg" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
-              <div class="menu-text"><h3 class="menu-text-title">PIZZA</h3>
+              <div class="menu-text"><h3 class="menu-text-title">Alcapone</h3>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-                  dolores.
+                  Donut dipped in white chocolate and topped with sliced toasted almonds.
                 </p>
                 <h3 class="menu-text-title">₹ COST</h3>
               </div>
