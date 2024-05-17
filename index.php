@@ -166,7 +166,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/Alcapone.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/Alcapone.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Alcapone</h3>
@@ -185,7 +185,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/avocado-dicaprio.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/avocado-dicaprio.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Avocado</h3>
@@ -204,7 +204,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/berry-spears.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/berry-spears.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Berry Spears</h3>
@@ -222,7 +222,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/black-jack.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/black-jack.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Black Jack</h3>
@@ -245,7 +245,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/caviar-strawberry.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/caviar-strawberry.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Caviar Strawberry</h3>
@@ -264,7 +264,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/cheese-cakelicious.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/cheese-cakelicious.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Cheese Cakelicious</h3>
@@ -283,7 +283,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/choconutzy.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/choconutzy.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Choco Nutzy</h3>
@@ -301,7 +301,7 @@
         <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
-              <img src="Coffee/chocolate-rainbow.webp" alt="Avatar" class="menu-image">
+              <img src="Donut/chocolate-rainbow.webp" alt="Avatar" class="menu-image">
             </div>
             <div class="menu-flip-card-back">
               <div class="menu-text"><h3 class="menu-text-title">Chocolate Rainbow</h3>
