@@ -41,7 +41,7 @@
     <!-- End of ChatBot code -->
     <header class="header">
       <section class="main">
-        <a class="logo" href="#"><img src="svg/coffee.svg" height="30px"></a>
+        <a class="logo" href="#"><img src="svg/Icon.png" height="30px"></a>
         <div class="fix" >
           <a class="a1" href="#id-contact">CONTACT US</a>
           <a class="a1" href="#id-menu">DISCOVER</a>
@@ -389,7 +389,7 @@
             <br>
             <p class="p1">“ Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
             <br>
-            <img class="slider-img1" src="people/1.jpeg">
+            <img class="slider-img1" src="people/1.png">
             <h3 class="slider-name1">Charles White</h3>
             <br><br>
             <hr class="slides-hr">
@@ -400,7 +400,7 @@
             <br><br><br>
             <p class="p2">“ Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
             <br>
-            <img class="slider-img2" src="people/5.jpeg">
+            <img class="slider-img2" src="people/1.png">
             <h3 class="slider-name2">Seth Doyle</h3>
             <br><br>
             <hr class="slides-hr1">
@@ -414,7 +414,7 @@
             <br>
             <p class="p1">“ Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
             <br>
-            <img class="slider-img1" src="people/2.jpeg">
+            <img class="slider-img1" src="people/1.png">
             <h3 class="slider-name1">Roberto Webb</h3>
             <br><br>
             <hr class="slides-hr">
@@ -425,7 +425,7 @@
             <br><br><br>
             <p class="p2">“ Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
             <br>
-            <img class="slider-img2" src="people/4.jpeg">
+            <img class="slider-img2" src="people/1.png">
             <h3 class="slider-name2">Midas Hofsatra</h3>
             <br><br>
             <hr class="slides-hr1">
@@ -439,7 +439,7 @@
             <br>
             <p class="p1">“ Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
             <br>
-            <img class="slider-img1" src="people/3.jpeg">
+            <img class="slider-img1" src="people/1.png">
             <h3 class="slider-name1">Mellisa Howard</h3>
             <br><br>
             <hr class="slides-hr">
@@ -450,7 +450,7 @@
             <br><br><br>
             <p class="p2">“ Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. ”</p>
             <br>
-            <img class="slider-img2" src="people/7.jpeg">
+            <img class="slider-img2" src="people/1.png">
             <h3 class="slider-name2">DeMorris Byrd</h3>
             <br><br>
             <hr class="slides-hr1">
