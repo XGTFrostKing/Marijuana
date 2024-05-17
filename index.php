@@ -543,7 +543,7 @@
         <a class="contact-social-icons" href="#"><img src="svg/linkedin.svg" weight="25" title="gmail" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="contact-social-icons" href="#"><img src="svg/whatsapp.svg" weight="25" title="whatsapp" height="25"></a> 
     </div><br>
-    <p class="fontsettings">Copyright © 2020 | <a class="colorcover-link" href="#">Dough-licious Delights</a></p><br><br>
+    <p class="fontsettings">Copyright © 2024 | <a class="colorcover-link" href="#">Dough-licious Delights</a></p><br><br>
   </div></center>
   </body>
 </html>
