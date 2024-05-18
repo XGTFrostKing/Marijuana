@@ -173,7 +173,7 @@
                 <p class="about-text">
                   Donut dipped in white chocolate and topped with sliced toasted almonds.
                 </p>
-                <h3 class="menu-text-title">100 PHP</h3>
+                <h3 class="menu-text-title">₱100</h3>
               </div>
             </div>
           </div>
@@ -192,7 +192,7 @@
                 <p class="about-text">
                   Donut filled with avocado cream, dipped in avocado chocolate, and garnished with dark chocolate flakes.
                 </p>
-                <h3 class="menu-text-title">100 PHP</h3>
+                <h3 class="menu-text-title">₱100</h3>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@
                 <p class="about-text">
                   Donut filled with whipped cream cheese, dipped in strawberry jam, and garnished with white chocolate flakes.
                 </p>
-                <h3 class="menu-text-title">150 PHP</h3>
+                <h3 class="menu-text-title">₱150</h3>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@
                 <p class="about-text">
                   Donut fully encased in dark chocolate.
                 </p>
-                <h3 class="menu-text-title">100 PHP</h3>
+                <h3 class="menu-text-title">₱100</h3>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
                 <p class="about-text">
                   Donut dipped in strawberry milk chocolate and sprinkled with dark chocolate coated crisps.
                 </p>
-                <h3 class="menu-text-title">200 PHP</h3>
+                <h3 class="menu-text-title">₱200</h3>
               </div>
             </div>
           </div>
@@ -271,7 +271,7 @@
                 <p class="about-text">
                   Donut filled with whipped cream cheese, dipped in white chocolate, topped with cookie crumbs, and garnished with white chocolate.
                 </p>
-                <h3 class="menu-text-title">120 PHP</h3>
+                <h3 class="menu-text-title">₱120</h3>
               </div>
             </div>
           </div>
@@ -290,7 +290,7 @@
                 <p class="about-text">
                   Donut filled with dark chocolate ganache & peanut butter cream, dipped in milk chocolate, and garnished with dark chocolate.
                 </p>
-                <h3 class="menu-text-title">125 PHP</h3>
+                <h3 class="menu-text-title">₱125</h3>
               </div>
             </div>
           </div>
@@ -308,7 +308,7 @@
                 <p class="about-text">
                   Donut dipped in white chocolate, sprinkled with crushed toasted almonds, and garnished with strawberry jam.
                 </p>
-                <h3 class="menu-text-title">90 PHP</h3>
+                <h3 class="menu-text-title">₱90</h3>
               </div>
             </div>
           </div>
