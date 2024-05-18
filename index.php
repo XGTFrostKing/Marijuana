@@ -535,11 +535,9 @@
     </section>
     <center>
     <div class="contact-social">
-        <a class="contact-social-icons" href="#"><img src="svg/facebook.svg" weight="25" title="facebook" height="25"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="contact-social-icons" href="#"><img src="svg/instagram.svg" weight="25" title="instagram" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="contact-social-icons" href="#"><img src="svg/google.svg" weight="25" title="gmail" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="contact-social-icons" href="#"><img src="svg/linkedin.svg" weight="25" title="gmail" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="contact-social-icons" href="#"><img src="svg/whatsapp.svg" weight="25" title="whatsapp" height="25"></a> 
+        <a class="contact-social-icons" href="https://web.facebook.com/LeeroiCayetano25"><img src="svg/facebook-red.svg" weight="25" title="facebook" height="25"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="https://web.facebook.com/charlesescosio05"><img src="svg/facebook.svg" weight="25" title="facebook" height="25"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="https://web.facebook.com/lenard.yson"><img src="svg/facebook.svg" weight="25" title="facebook" height="25"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div><br>
     <p class="fontsettings">Copyright © 2024 | <a class="colorcover-link" href="#">Dough-licious Delights</a></p><br><br>
   </div></center>

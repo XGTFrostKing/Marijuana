@@ -686,7 +686,7 @@ label{
 .menu-flip-card {
   background-color: transparent;
   width: 90%;
-  height: 105%;
+  height: 95%;
   perspective: 1000px;
   z-index: 3;
 }
