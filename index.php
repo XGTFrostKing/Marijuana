@@ -27,7 +27,6 @@
   </head>
 
   <body>
-    <!-- Start of ChatBot (www.chatbot.com) code -->
     <script type="text/javascript">
         window.__be = window.__be || {};
         window.__be.id = "6647203477ef780007855fe6";
@@ -38,7 +37,6 @@
         })();
     </script>
     <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
-    <!-- End of ChatBot code -->
     <header class="header">
       <section class="main">
         <a class="logo" href="#"><img src="svg/Icon.png" height="30px"></a>
