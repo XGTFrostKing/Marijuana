@@ -172,7 +172,6 @@
                   Donut dipped in white chocolate and topped with sliced toasted almonds.
                 </p>
                 <h3 class="menu-text-title">100 PHP</h3>
-                <a href ="#menu" onclick="myFunction()" class ="btn"> ORDER NOW </a>
               </div>
             </div>
           </div>
@@ -193,7 +192,6 @@
                   Donut filled with avocado cream, dipped in avocado chocolate, and garnished with dark chocolate flakes.
                 </p>
                 <h3 class="menu-text-title">100 PHP</h3>
-                <button type ="button" class ="btn1"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -213,7 +211,6 @@
                   Donut filled with whipped cream cheese, dipped in strawberry jam, and garnished with white chocolate flakes.
                 </p>
                 <h3 class="menu-text-title">150 PHP</h3>
-                <button type ="button" class ="btn2"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -232,7 +229,6 @@
                   Donut fully encased in dark chocolate.
                 </p>
                 <h3 class="menu-text-title">100 PHP</h3>
-                <button type ="button" class ="btn3"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -256,7 +252,6 @@
                   Donut dipped in strawberry milk chocolate and sprinkled with dark chocolate coated crisps.
                 </p>
                 <h3 class="menu-text-title">200 PHP</h3>
-                <button type ="button" class ="btn4"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -276,7 +271,6 @@
                   Donut with cream cheese, dipped white chocolate, topped cookie crumbs, and white chocolate.
                 </p>
                 <h3 class="menu-text-title">120 PHP</h3>
-                <button type ="button" class ="btn5"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -296,7 +290,6 @@
                   Donut filled with dark chocolate ganache & peanut butter cream, dipped in milk chocolate, and garnished with dark chocolate.
                 </p>
                 <h3 class="menu-text-title">125 PHP</h3>
-                <button type ="button" class ="btn6"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -315,7 +308,6 @@
                   Donut dipped in white chocolate, sprinkled with crushed toasted almonds, and garnished with strawberry jam.
                 </p>
                 <h3 class="menu-text-title">90 PHP</h3>
-                <button type ="button" class ="btn7"> ORDER NOW </button>
               </div>
             </div>
           </div>
@@ -326,7 +318,7 @@
       <br>
     </section>
     <br>
-  
+    <a href = "#"> <button type = "button" onclick="openForm()" class ="btn"> ORDER NOW </button></a>
   </div>
 
   <!-- snacks menu ending -->
@@ -550,5 +542,154 @@
     </div><br>
     <p class="fontsettings">Copyright © 2024 | <a class="colorcover-link" href="#">Dough-licious Delights</a></p><br><br>
   </div></center>
+  
+  <?php
+  include('connect.php');
+
+  if (isset($_POST['submit'])) {
+    // Retrieve quantities
+    $aquan = isset($_POST['a_check']) ? $_POST['aquan'] : 0;
+    $bquan = isset($_POST['b_check']) ? $_POST['bquan'] : 0;
+    $cquan = isset($_POST['c_check']) ? $_POST['cquan'] : 0;
+    $dquan = isset($_POST['d_check']) ? $_POST['dquan'] : 0;
+    $equan = isset($_POST['e_check']) ? $_POST['equan'] : 0;
+    $fquan = isset($_POST['f_check']) ? $_POST['fquan'] : 0;
+    $gquan = isset($_POST['g_check']) ? $_POST['gquan'] : 0;
+    $hquan = isset($_POST['h_check']) ? $_POST['hquan'] : 0;
+    
+    // Calculate total price
+    $total_price = ($aquan * 100) + ($bquan * 100) + ($cquan * 150) + ($dquan * 100) + ($equan * 200) + ($fquan * 120) + ($gquan * 125) + ($hquan * 90);
+
+    // Create XML structure
+    $xml = new SimpleXMLElement('<donut_orders></donut_orders>');
+    $order = $xml->addChild('order');
+    $order->addChild('Alcapone_Quantity', $aquan);
+    $order->addChild('Avocado_Quantity', $bquan);
+    $order->addChild('BerrySpears_Quantity', $cquan);
+    $order->addChild('BlackJack_Quantity', $dquan);
+    $order->addChild('CavStrawberry_Quantity', $equan);
+    $order->addChild('Cakelicious_Quantity', $fquan);
+    $order->addChild('ChocoNutzy_Quantity', $gquan);
+    $order->addChild('ChocolateRainbow_Quantity', $hquan);
+    $order->addChild('Total_Price', $total_price);
+
+    // Convert XML to string
+    $xml_string = $xml->asXML();
+    $file_name = 'orders.xml'; 
+    file_put_contents($file_name, $xml_string);
+}
+?>
+ <div class="popup" id="myForm">
+    <form method="POST" class="form" oninput="calculateTotal()">
+        <h2>ORDER</h2>
+        
+        <input type="checkbox" name="a_check" value="Alcapone" onchange="toggleQuantity('aquan', this.checked)">
+        <label class="container">Alcapone (100 PHP)
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="number" id="aquan" name="aquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="b_check" value="Avocado" onchange="toggleQuantity('bquan', this.checked)">
+        <label class="container">Avocado (100 PHP)
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="number" id="bquan" name="bquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="c_check" value="Berry Spears" onchange="toggleQuantity('cquan', this.checked)">
+        <label class="container">Berry Spears (150 PHP)
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="number" id="cquan" name="cquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="d_check" value="Black Jack" onchange="toggleQuantity('dquan', this.checked)">
+        <label class="container">Black Jack (100 PHP)
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="number" id="dquan" name="dquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="e_check" value="Caviar Strawberry" onchange="toggleQuantity('equan', this.checked)">
+        <label class="container">Caviar Strawberry (200 PHP)
+      &nbsp;&nbsp;
+        </label>
+        <input type="number" id="equan" name="equan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="f_check" value="Cakelicious" onchange="toggleQuantity('fquan', this.checked)">
+        <label class="container">Cheese Cakelicious (120 PHP)
+        </label>
+        <input type="number" id="fquan" name="fquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="g_check" value="Choco Nutzy" onchange="toggleQuantity('gquan', this.checked)">
+        <label class="container">Choco Nutzy (125 PHP)
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="number" id="gquan" name="gquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+        
+        <input type="checkbox" name="h_check" value="Chocolate Rainbow" onchange="toggleQuantity('hquan', this.checked)">
+        <label class="container">Chocolate Rainbow (90 PHP)
+        &nbsp;
+        </label>
+        <input type="number" id="hquan" name="hquan" min="0" max="10" value="0" disabled>
+        <label class="quanti">Quantity</label>
+        <br><br>
+
+        <p>Total Price: <span id="totalPrice">0</span> PHP</p>
+        <input type="hidden" id="total_price" name="total_price" value="0">
+        <input type="submit" class="button" name="submit" value="PLACE ORDER" onclick="closeForm()">
+    </form>
+</div>
+
+<script>
+const prices = {
+    aquan: 100,
+    bquan: 100,
+    cquan: 150,
+    dquan: 100,
+    equan: 200,
+    fquan: 120,
+    gquan: 125,
+    hquan: 90
+};
+
+function toggleQuantity(id, isChecked) {
+    document.getElementById(id).disabled = !isChecked;
+    if (!isChecked) {
+        document.getElementById(id).value = 0;
+    }
+    calculateTotal();
+}
+
+function calculateTotal() {
+    let total = 0;
+    for (const id in prices) {
+        const quantity = document.getElementById(id).value;
+        total += prices[id] * quantity;
+    }
+    document.getElementById('totalPrice').innerText = total;
+}
+
+function openForm() {
+    const overlay = document.getElementById('myForm'); 
+    overlay.classList.toggle('show'); 
+}
+
+function closeForm() {
+    const weird = document.getElementById('myForm'); 
+    weird.classList.toggle('hide'); 
+}
+</script>
   </body>
 </html>
