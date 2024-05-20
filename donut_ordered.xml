@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+  <donut>
+    <name>Alcapone</name>
+    <quantity>1</quantity>
+    <total_price>100 PHP</total_price>
+  </donut>
+  <donut>
+    <name>Berry Spears</name>
+    <quantity>1</quantity>
+    <total_price>150 PHP</total_price>
+  </donut>
+  <donut>
+    <name>Avocado</name>
+    <quantity>2</quantity>
+    <total_price>200 PHP</total_price>
+  </donut>
+  <donut>
+    <name>Berry Spears</name>
+    <quantity>1</quantity>
+    <total_price>150 PHP</total_price>
+  </donut>
+  <donut>
+    <name>Avocado</name>
+    <quantity>10</quantity>
+    <total_price>1000 PHP</total_price>
+  </donut>
+</orders>

@@ -162,6 +162,7 @@
 
  <!-- first column -->
  <div class="menu-flip-card">
+        <article class="menu-section">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
               <img src="Donut/Alcapone.webp" alt="Avatar" class="menu-image">
@@ -544,9 +545,7 @@
   </div></center>
   
   <?php
-  include('connect.php');
-
-  if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     // Retrieve quantities
     $aquan = isset($_POST['a_check']) ? $_POST['aquan'] : 0;
     $bquan = isset($_POST['b_check']) ? $_POST['bquan'] : 0;
@@ -556,27 +555,59 @@
     $fquan = isset($_POST['f_check']) ? $_POST['fquan'] : 0;
     $gquan = isset($_POST['g_check']) ? $_POST['gquan'] : 0;
     $hquan = isset($_POST['h_check']) ? $_POST['hquan'] : 0;
-    
+
     // Calculate total price
     $total_price = ($aquan * 100) + ($bquan * 100) + ($cquan * 150) + ($dquan * 100) + ($equan * 200) + ($fquan * 120) + ($gquan * 125) + ($hquan * 90);
 
-    // Create XML structure
-    $xml = new SimpleXMLElement('<donut_orders></donut_orders>');
-    $order = $xml->addChild('order');
-    $order->addChild('Alcapone_Quantity', $aquan);
-    $order->addChild('Avocado_Quantity', $bquan);
-    $order->addChild('BerrySpears_Quantity', $cquan);
-    $order->addChild('BlackJack_Quantity', $dquan);
-    $order->addChild('CavStrawberry_Quantity', $equan);
-    $order->addChild('Cakelicious_Quantity', $fquan);
-    $order->addChild('ChocoNutzy_Quantity', $gquan);
-    $order->addChild('ChocolateRainbow_Quantity', $hquan);
-    $order->addChild('Total_Price', $total_price);
+  
+    // Load existing XML file or create a new one
+    $file_name = 'donut_ordered.xml';
+    if (file_exists($file_name)) {
+        $xml = simplexml_load_file($file_name);
+    } else {
+        $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><orders></orders>');
+    }
 
-    // Convert XML to string
-    $xml_string = $xml->asXML();
-    $file_name = 'orders.xml'; 
-    file_put_contents($file_name, $xml_string);
+    // Function to add donut to XML
+    function addDonut($xml, $name, $quantity, $total_price) {
+        $donut = $xml->addChild('donut');
+        $donut->addChild('name', $name);
+        $donut->addChild('quantity', $quantity);
+        $donut->addChild('total_price', $total_price . ' PHP');
+    }
+
+    // Add each donut type to the XML
+    if ($aquan > 0) {
+        addDonut($xml, 'Alcapone', $aquan, $aquan * 100);
+    }
+    if ($bquan > 0) {
+        addDonut($xml, 'Avocado', $bquan, $bquan * 100);
+    }
+    if ($cquan > 0) {
+        addDonut($xml, 'Berry Spears', $cquan, $cquan * 150);
+    }
+    if ($dquan > 0) {
+        addDonut($xml, 'Black Jack', $dquan, $dquan * 100);
+    }
+    if ($equan > 0) {
+        addDonut($xml, 'Caviar Strawberry', $equan, $equan * 200);
+    }
+    if ($fquan > 0) {
+        addDonut($xml, 'Cheese Cakelicious', $fquan, $fquan * 120);
+    }
+    if ($gquan > 0) {
+        addDonut($xml, 'Choco Nutzy', $gquan, $gquan * 125);
+    }
+    if ($hquan > 0) {
+        addDonut($xml, 'Chocolate Rainbow', $hquan, $hquan * 90);
+    }
+
+    // Save XML to a file with proper formatting
+    $dom = new DOMDocument('1.0');
+    $dom->preserveWhiteSpace = false;
+    $dom->formatOutput = true;
+    $dom->loadXML($xml->asXML());
+    $dom->save($file_name);
 }
 ?>
  <div class="popup" id="myForm">
