@@ -41,11 +41,11 @@
       <section class="main">
         <a class="logo" href="#"><img src="svg/Icon.png" height="30px"></a>
         <div class="fix" >
+          <a class="a1" href="#"id="loginLink" onclick="openLogin()">LOGIN</a>
           <a class="a1" href="#id-contact">CONTACT US</a>
           <a class="a1" href="#id-menu">DISCOVER</a>
           <a class="a1" href="#id-about">ABOUT US</a>
           <a class="a1" href="#">HOME</a>
-          <a href = "#myForm"> <button type = "button" onclick="openloginForm()" > login</button></a>
         </div>
       </section>
       <div class="fix-background" id="id-navi"></div>
@@ -727,116 +727,56 @@ function closeForm() {
 }
 </script>
 
-
-/*signin php
-
-<?php
-
-
-$errorMessage = '';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
-
-    // Load the XML file
-    $xmlFile = 'users.xml';
-    if (file_exists($xmlFile)) {
-        $xml = simplexml_load_file($xmlFile);
-
-        // Check if user exists and password matches
-        foreach ($xml->user as $user) {
-            if ((string)$user->email === $email && (string)$user->password === $password) {
-                $_SESSION['email'] = (string)$user->email;
-                header('Location: index.php');
-                exit;
+<div class="box hide" id="loginBox">
+    <form method="POST" class="form" onsubmit="event.preventDefault(); signIn();">
+        <h2>LOGIN</h2>
+        <div class="input-box">
+            <input type="text" class="input-field" name="email" placeholder="Email" autocomplete="off" maxlength="50" required>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" name="password" placeholder="Password" autocomplete="off" maxlength="50" required>
+        </div>
+        <div class="input-submit">
+            <button type="submit" class="submit-btn" name="login" onclick="changeButton()">Sign In</button>
+        </div>
+        <div class="sign-up-link">
+            <p>Don't have an account? <a href="#" onclick="openSignup()">Sign Up</a></p>
+        </div>
+    </form>
+</div>
+<script>
+    function openLogin() {
+            const overlay = document.getElementById('loginBox');
+            const loginLink = document.getElementById('loginLink');
+            
+            if (loginLink.textContent === 'LOGOUT') {
+                logout();
+            } else {
+                if (overlay.classList.contains('hide')) {
+                    overlay.classList.remove('hide');
+                    overlay.classList.add('show');
+                } else {
+                    overlay.classList.remove('show');
+                    overlay.classList.add('hide');
+                }
             }
         }
 
-        // If no matching user found
-        $errorMessage = 'Invalid email or password!';
-    } else {
-        $errorMessage = 'No user data found!';
-    }
-}
-?>
-*/
-
-
-<div class="popup" id="myloginForm">
-      <form method="POST" class="form">
-        
-            <div class="login-header">
-                <header>
-                    <a href="#" onclick="closeLogin()">
-                        <img src="back.png" style="width: 35px; height: 35px; position: absolute; top: 10px; right: 10px;">
-                    </a>
-                    <h2>Login</h2>
-                </header>
-            </div>
-            <?php if (!empty($errorMessage)): ?>
-                <div class="error-message"><?php echo $errorMessage; ?></div>
-            <?php endif; ?>
-            <form action="index.php" method="POST">
-                <div class="input-box">
-                    <input type="text" class="input-field" name="email" placeholder="Email" autocomplete="off" maxlength="50" required>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" name="password" placeholder="Password" autocomplete="off" maxlength="50" required>
-                </div>
-                <div class="input-submit">
-                    <button type="submit" class="submit-btn" name="login">Sign In</button>
-                </div>
-            </form>
-            <div class="sign-up-link">
-                <p>Don't have an account? <a href="id-signup" onclick="openSignup()">Sign Up</a></p>
-            </div>
-        </div>
-    </div>
-   </div>
-
-  /*creating user */
-  /*sign up php*/
-  <div class="popup" id="mysignupForm">
-            <div class="login-header">
-                <header>
-                    <a href="id-signup" onclick="closeSignup()">
-                        <img src="meee/back.png" style="width: 35px; height: 35px; position: absolute; top: 10px; right: 10px;">
-                    </a>
-                    Sign up
-                </header>
-            </div>
-            <form action="index.php" method="POST">
-                <div class="input-box">
-                    <input type="text" class="input-field" name="fullname" placeholder="Fullname" autocomplete="off" maxlength="50" required>
-                </div>
-                <div class="input-box">
-                    <input type="email" class="input-field" name="email" placeholder="Email" autocomplete="off" maxlength="50" required>
-                </div>
-                <div class="input-box">
-                    <input type="number" class="input-field" name="age" placeholder="Age" autocomplete="off" max="99" required>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" name="password" placeholder="Password" autocomplete="off" maxlength="20" required>
-                </div>
-                <div class="input-submit">
-                    <button type="submit" class="submit-btn" name="signup">Sign Up</button>
-                </div>
-            </form>
-            <div class="sign-up-link">
-                <p>Already have an account? <a href="id-signin" onclick="closeSignup()">Sign in</a></p>
-            </div>
-        </div>
-    </div>
-   
-   <script>
-        function openLogin() {
-            document.getElementById('loginBox').style.display = 'flex';
+        function signIn() {
+            const loginLink = document.getElementById('loginLink');
+            const overlay = document.getElementById('loginBox');
+            loginLink.textContent = 'LOGOUT';
+            overlay.classList.remove('show');
+            overlay.classList.add('hide');
+        }
+        function logout() {
+            const loginLink = document.getElementById('loginLink');
+            loginLink.textContent = 'LOGIN';
+            const overlay = document.getElementById('loginBox');
+            overlay.classList.remove('show');
+            overlay.classList.add('hide');
         }
 
-        function closeLogin() {
-            document.getElementById('loginBox').style.display = 'none';
-        }
 
         function openSignup() {
             document.getElementById('signupBox').style.display = 'flex';
