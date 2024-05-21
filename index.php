@@ -161,8 +161,9 @@
   <section class="menu" style="display: inline;">
 
  <!-- first column -->
- <div class="menu-flip-card">
+ 
         <article class="menu-section">
+        <div class="menu-flip-card">
           <div class="menu-flip-card-inner">
             <div class="menu-flip-card-front">
               <img src="Donut/Alcapone.webp" alt="Avatar" class="menu-image">
