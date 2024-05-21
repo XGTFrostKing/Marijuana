@@ -50,4 +50,14 @@
     <quantity>10</quantity>
     <total_price>1000 PHP</total_price>
   </donut>
+  <donut>
+    <name>Avocado</name>
+    <quantity>10</quantity>
+    <total_price>1000 PHP</total_price>
+  </donut>
+  <donut>
+    <name>Avocado</name>
+    <quantity>10</quantity>
+    <total_price>1000 PHP</total_price>
+  </donut>
 </orders>

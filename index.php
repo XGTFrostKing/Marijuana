@@ -320,7 +320,9 @@
       <br>
     </section>
     <br>
-    <a href = "#"> <button type = "button" onclick="openForm()" class ="btn"> ORDER NOW </button></a>
+    <div class = "centerbutton">
+      <a href = "#"> <button type = "button" onclick="openForm()" class ="btn"> ORDER NOW </button></a>
+      </div>
   </div>
 
   <!-- snacks menu ending -->
