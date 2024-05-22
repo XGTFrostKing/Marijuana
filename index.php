@@ -727,9 +727,43 @@ function closeForm() {
 }
 </script>
 
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = htmlspecialchars($_POST['email']);
+    $password = htmlspecialchars($_POST['password']);
+
+    // Check if email and password fields are empty
+    if (empty($email) || empty($password)) {
+        // Redirect or display an error message as needed
+        exit;
+    }
+
+    // Load the XML file
+    $xmlFile = 'signup.xml';
+    if (file_exists($xmlFile)) {
+        $xml = simplexml_load_file($xmlFile);
+
+        // Check if user exists and password matches
+        foreach ($xml->account as $account) {
+            if ((string)$account->email === $email && password_verify($password, (string)$account->password)) {
+                $_SESSION['email'] = (string)$account->email;
+                header('Location: index.php');
+                exit;
+            }
+        }
+
+        // If no matching user found or password doesn't match
+        $errorMessage = 'Invalid email or password!';
+    } else {
+        $errorMessage = 'No user data found!';
+    }
+}
+?>
 
 <div class="box" id="loginBox">
-    <form method="POST" class="form" onsubmit="event.preventDefault(); signIn();">
+    <form method="POST" class="form">
         <h2>LOGIN</h2>
         <div class="input-box">
             <input type="text" class="input-field" name="email" placeholder="Email" autocomplete="off" maxlength="50" required>
@@ -738,7 +772,7 @@ function closeForm() {
             <input type="password" class="input-field" name="password" placeholder="Password" autocomplete="off" maxlength="50" required>
         </div>
         <div class="input-submit">
-            <button type="submit" class="submit-btn" name="login" onclick="changeButton()">Sign In</button>
+            <button type="submit" class="submit-btn" name="login">Sign In</button>
         </div>
         <div class="sign-up-link">
             <p>Don't have an account? <a href="#" onclick="openSignup()">Sign Up</a></p>
@@ -746,8 +780,50 @@ function closeForm() {
     </form>
 </div>
 
-<div class="boxbox hide" id="signupBox">
-        <form method="POST" class="form" onsubmit="event.preventDefault(); closeSignup();">
+
+<?php
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $fullname = htmlspecialchars($_POST['fullname']);
+    $email = htmlspecialchars($_POST['email']);
+    $age = htmlspecialchars($_POST['age']);
+    $password = htmlspecialchars($_POST['password']);
+
+    // Load existing XML file or create a new one
+    $name_file = 'signup.xml';
+    if (file_exists($name_file)) {
+        $xml = simplexml_load_file($name_file);
+    } else {
+        $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><SignedUp></SignedUp>');
+    }
+
+    // Function to add a new account to the XML
+    function addAccount($xml, $fullname, $email, $age, $password) {
+        $account = $xml->addChild('account');
+        $account->addChild('userid', uniqid());
+        $account->addChild('fullname', $fullname);
+        $account->addChild('email', $email);
+        $account->addChild('age', $age);
+        $account->addChild('password', $password);
+    }
+
+    // Call the function to add the account
+    addAccount($xml, $fullname, $email, $age, $password);
+
+    // Save the updated XML to file with proper formatting
+    $dom = new DOMDocument('1.0');
+    $dom->preserveWhiteSpace = false;
+    $dom->formatOutput = true;
+    $dom->loadXML($xml->asXML());
+    $dom->save($name_file);
+}
+
+?>
+
+
+  <div class="box1" id="signupBox">
+        <form method="POST" class="form">
             <h2>Sign Up</h2>
             <div class="input-box">
                 <input type="text" class="input-field" name="fullname" placeholder="Full name" autocomplete="off" maxlength="50" required>
@@ -771,20 +847,18 @@ function closeForm() {
     </div>
     
 <script>
-    function openLogin() {
+       function openLogin() {
             const overlay = document.getElementById('loginBox');
+            const signupBox = document.getElementById('signupBox');
             const loginLink = document.getElementById('loginLink');
-            
+
             if (loginLink.textContent === 'LOGOUT') {
                 logout();
             } else {
-                if (overlay.classList.contains('hide')) {
-                    overlay.classList.remove('hide');
-                    overlay.classList.add('show');
-                } else {
-                    overlay.classList.remove('show');
-                    overlay.classList.add('hide');
-                }
+                signupBox.classList.add('hide');
+                signupBox.classList.remove('show');
+                overlay.classList.add('show');
+                overlay.classList.remove('hide');
             }
         }
 
@@ -795,6 +869,7 @@ function closeForm() {
             overlay.classList.remove('show');
             overlay.classList.add('hide');
         }
+
         function logout() {
             const loginLink = document.getElementById('loginLink');
             loginLink.textContent = 'LOGIN';
@@ -803,26 +878,29 @@ function closeForm() {
             overlay.classList.add('hide');
         }
 
-
         function openSignup() {
-          const overlay = document.getElementById('signupBox'); 
-          overlay.classList.toggle('show'); 
+            const signupBox = document.getElementById('signupBox');
+            const loginBox = document.getElementById('loginBox');
+            signupBox.classList.add('show');
+            signupBox.classList.remove('hide');
+            loginBox.classList.add('hide');
+            loginBox.classList.remove('show');
         }
 
         function closeSignup() {
-          const overlay = document.getElementById('signupBox'); 
-          overlay.classList.toggle('hide'); 
+            const signupBox = document.getElementById('signupBox');
+            signupBox.classList.add('hide');
+            signupBox.classList.remove('show');
         }
-        
-
-        // Restrict age input to two digits
-        document.querySelector('[name="age"]').addEventListener('input', function() {
-            let age = this.value;
-            age = age.replace(/\D/g, '');
-            if (age.length > 2) {
-                age = age.slice(0, 2);
-            }
-            this.value = age;
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('[name="age"]').addEventListener('input', function() {
+                let age = this.value;
+                age = age.replace(/\D/g, '');
+                if (age.length > 2) {
+                    age = age.slice(0, 2);
+                }
+                this.value = age;
+            });
         });
     </script>
   </body>

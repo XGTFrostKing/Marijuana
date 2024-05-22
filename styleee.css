@@ -1315,15 +1315,14 @@ img {vertical-align: middle;}
   opacity:0;
 }
 
-.boxbox {
+.box1 {
   position: absolute;
   width: 30rem;
   justify-content: center;
-  height: 20rem;
+  height: 25rem;
   padding: 1rem;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 20%;
+  left: 34%;
   background: #ffffff;
   display: none;
   border-radius: 1rem;
@@ -1332,66 +1331,19 @@ img {vertical-align: middle;}
               transform 200ms ease-in-out 0ms;
 }
 
-.boxbox .form h2 {
+.box1 .form h2 {
   text-align: center;
   color: #222;
   margin: 0 0 10px;
-  font-size: 50px;
+  font-size: 25px;
 }
 
-.boxbox.show { 
+.box1.show { 
   display: flex; 
   opacity: 1; 
 }
 
-.boxbox.hide {
+.box1.hide {
   display: none;
-  opacity: 0;
-}
-
-::placeholder {
-  font-weight: 500;
-  color: grey;
-}
-
-.input-field:focus {
-  width: 105%;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.input-submit {
-  position: relative;
-  margin-top: 15px;
-}
-
-.submit-btn {
-  width: 100%;
-  height: 40px;
-  background: #007bff; /* Changed to make button visible */
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: .3s;
-  color: #fff;
-}
-
-.input-submit label {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  color: #fff;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background: #0056b3;
-  transform: scale(1.05, 1);
+  opacity:0;
 }
