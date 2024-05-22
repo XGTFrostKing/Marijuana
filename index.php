@@ -727,7 +727,8 @@ function closeForm() {
 }
 </script>
 
-<div class="box hide" id="loginBox">
+
+<div class="box" id="loginBox">
     <form method="POST" class="form" onsubmit="event.preventDefault(); signIn();">
         <h2>LOGIN</h2>
         <div class="input-box">
@@ -744,6 +745,31 @@ function closeForm() {
         </div>
     </form>
 </div>
+
+<div class="boxbox hide" id="signupBox">
+        <form method="POST" class="form" onsubmit="event.preventDefault(); closeSignup();">
+            <h2>Sign Up</h2>
+            <div class="input-box">
+                <input type="text" class="input-field" name="fullname" placeholder="Full name" autocomplete="off" maxlength="50" required>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" name="email" placeholder="Email" autocomplete="off" maxlength="50" required>
+            </div>
+            <div class="input-box">
+                <input type="number" class="input-field" name="age" placeholder="Age" autocomplete="off" max="99" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" name="password" placeholder="Password" autocomplete="off" maxlength="20" required>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">Sign up</button>
+            </div>
+            <div class="sign-up-link">
+                <p>Already have an account? <a href="#" onclick="openLogin()">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+    
 <script>
     function openLogin() {
             const overlay = document.getElementById('loginBox');
@@ -779,13 +805,13 @@ function closeForm() {
 
 
         function openSignup() {
-            document.getElementById('signupBox').style.display = 'flex';
-            document.getElementById('loginBox').style.display = 'none';
+          const overlay = document.getElementById('signupBox'); 
+          overlay.classList.toggle('show'); 
         }
 
         function closeSignup() {
-            document.getElementById('signupBox').style.display = 'none';
-            document.getElementById('loginBox').style.display = 'flex';
+          const overlay = document.getElementById('signupBox'); 
+          overlay.classList.toggle('hide'); 
         }
         
 
